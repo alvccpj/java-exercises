@@ -91,7 +91,7 @@ public class FourthQuestion {
 			}
 
 		}
-		sc.close();
+		
 
 	}
 }
