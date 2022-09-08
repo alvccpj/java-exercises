@@ -3,9 +3,10 @@ package Atividade1;
 public class FirstQuestion {
 
 	public static void main(String[] args) {
+
+		char vet[] = new char[10];
 		char aux;
-		char[] vet = new char[10];
-		int i;
+
 		vet[0] = 'T';
 		vet[1] = 'R';
 		vet[2] = 'X';
@@ -16,20 +17,24 @@ public class FirstQuestion {
 		vet[7] = 'B';
 		vet[8] = 'A';
 		vet[9] = '!';
-		
-		aux = vet[5]; //
+
+		aux = vet[5];
 		vet[5] = vet[8];
 		vet[8] = aux;
-		
-		for (i = 0; i <= 3; i++) {
-			aux = vet[i];
-			vet[i] = vet[7 - i];
-			vet[7 - i] = aux;
+
+		for (int j = 0; j <= 3; j++) {
+			aux = vet[j];
+			vet[j] = vet[7 - j];
+			vet[7 - j] = aux;
+			System.out.println("Valor do vet[] = " + vet[j]);
+			System.out.println("Valor do vet[7-j] = " + vet[7 - j]);
+			System.out.println("Valor do aux = " + aux);
 		}
-		vet[5] = vet[1];
-		for (i = 0; i <= 9; i++) {
-			System.out.print(vet[i] + ' ');
+
+		for (int i = 0; i < vet.length; i++) {
+			System.out.print(vet[i] + " ");
 		}
-		System.out.println();
-	} // fim do main
+
+	}
+
 }
