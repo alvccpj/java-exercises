@@ -1,2 +1,2 @@
-### Java - String
-- This is me practicing String exercises
+### Java
+- This is me practicing some java exercises, including arrays.
